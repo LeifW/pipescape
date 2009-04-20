@@ -1,0 +1,14 @@
+ XSLTMatchPattern
+ xsd:QName
+ xsd:string
+ xsd:boolean
+ xsd:integer
+ xsd:anyURI
+ RegularExpression
+ ListOfQNames
+ true|false|omit
+ XPathExpression
+ NormalizationForm
+ first-child|last-child|before|after
+ all|elements|attributes
+ strict|lax

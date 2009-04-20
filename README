@@ -1,0 +1,7 @@
+Steps2Wires.xsl  -- run 'saxon -o:xproc-language.js typed-library.xml Steps2Wires.xsl' to generate xproc-language.js
+add_types2lib.xq  -- run 'saxon-xquery' on this to generate a typed version of the standard step library from the W3C XML document.
+index.html
+typed-library.xml
+types.list  -- set of all the types used in the options.
+types.xq
+xproc-language.js
