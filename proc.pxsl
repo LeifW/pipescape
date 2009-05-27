@@ -1,0 +1,26 @@
+<<<?xml version="1.0" encoding="UTF-8" ?>>>
+
+stylesheet -version=1.0 -xmlns:xsl=http://www.w3.org/1999/XSL/Transform -xmlns:exsl=http://exslt.org/common -extension-element-prefixes=exsl -xmlns:p=http://www.w3.org/ns/xproc -xmlns:c=http://www.w3.org/ns/xproc-step
+  output -indent=yes
+
+
+  template value
+    p:declare-step -name={name}
+      apply-templates working/modules
+
+  template modules
+    variable curPos position()-1
+    element {concat('p:',name)} 
+      attribute name
+        value-of concat(name,position())
+      apply-templates value/* options
+      apply-templates ../wires[tgt/moduleId=$curPos]
+
+  template wires
+    variable from src/moduleId+1
+    p:input -port={tgt/terminal}
+      p:pipe -step={concat(../modules[$from]/name,$from)} -port={src/terminal}
+  
+  template * -mode=options
+    attribute {name()}
+      value-of .
