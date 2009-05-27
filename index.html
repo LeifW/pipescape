@@ -96,13 +96,59 @@ div.WiringEditor-module-escape-markup {
 
 <script type="text/javascript" src="xproc-language.js"></script>
 
+<!-- Adding the ObjTree XML Library (included in inputex) -->
+<script src="../../lib/inputex/lib/XML/ObjTree.js"  type='text/javascript'></script>
+
 <script>
 
 // InputEx needs a correct path to this image
 inputEx.spacerUrl = "/inputex/trunk/images/space.gif";
 
+/**
+ * @class XProcEditor
+ * @extends WireIt.WiringEditor
+ * The wiring editor is overriden to add an "Export XML" action to the control bar
+ */
+XProcEditor = function() {
+   XProcEditor.superclass.constructor.call(this, xprocLanguage);
+};
+YAHOO.lang.extend(XProcEditor, WireIt.WiringEditor, {
+   
+   // Add the "export XML" button
+   renderButtons: function() {
+      XProcEditor.superclass.renderButtons.call(this);
+
+      var exportButton = new YAHOO.widget.Button({ 
+					label:"Export XML", 
+					id:"WiringEditor-exportButton",  // Use this to add an icon with CSS
+					container: YAHOO.util.Dom.get('toolbar') 
+			});
+      exportButton.on("click", this.exportXML, this, true);
+   },
+
+	// Click handler on the export button
+	exportXML: function() {
+		
+		// Convert the editor value to XML
+		var xotree = new XML.ObjTree();
+		var xml = xotree.hash_to_xml("value",this.getValue());
+		
+		// Build the panel
+		if(!this.exportPanel) {
+			this.exportPanel = new YAHOO.widget.Panel('xmlPanel', {fixedcenter: true,draggable: true,visible: false,modal: true});
+			this.exportPanel.setHeader("XML Export");
+			this.exportPanel.setBody("<textarea id='exportPanelBody' rows=30 cols=70></textarea>");
+      this.exportPanel.render(document.body);
+		}
+		
+		// Write the XML in the panel's textarea
+		YAHOO.util.Dom.get('exportPanelBody').value = xml;
+		this.exportPanel.show();
+	}
+});
+
 YAHOO.util.Event.onDOMReady( function() {
-	var editor = new WireIt.WiringEditor(xprocLanguage); 
+	var editor = new XProcEditor(); 
 });
 </script>
 
