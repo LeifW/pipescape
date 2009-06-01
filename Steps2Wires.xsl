@@ -47,7 +47,7 @@ modules: [
     </xsl:template>
  
     <xsl:template match="p:output">
-	    {"name": "<xsl:value-of select="@port"/>", "direction": [0,1], "offsetPosition":{"left": <xsl:value-of select=".5 * $width - ( .5 * $offset * (last() - 1)) + $offset * (position() - 1)"/>, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }<xsl:if test="position() != last()">,</xsl:if>
+	    {"name": "<xsl:value-of select="@port"/>", "direction": [0,1], "offsetPosition":{"left": <xsl:value-of select=".5 * $width - ( .5 * $offset * (last() - 1)) + $offset * (position() - 1)"/>, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }<xsl:if test="position() != last()">,</xsl:if>
     </xsl:template>
     
     <xsl:template match="p:option">
