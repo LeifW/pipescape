@@ -6,6 +6,8 @@
     <xsl:output method="text"/>
     <xsl:strip-space elements="*"/>
 
+    <xsl:key name="icons" match="step" use="@type"/>
+
     <xsl:variable name="width" select="234"/>
     <xsl:variable name="offset" select="80"/>
 
@@ -21,13 +23,14 @@ modules: [
 ]
 };
 </xsl:template>
-    
+
 <xsl:template match="p:declare-step">
     {
         "name": "<xsl:value-of select="substring(@type,3)"/>",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.<xsl:if test="p:option">Form</xsl:if>Container",
             "title": "<xsl:value-of select="@type"/>",
+	    "icon": "icons/<xsl:value-of select="key('icons', @type, document('icons.xml'))"/>.png",
             "terminals": [
                 <xsl:apply-templates select="p:input"/><xsl:if test="p:input and p:output">,</xsl:if>
 		<xsl:apply-templates select="p:output"/>
