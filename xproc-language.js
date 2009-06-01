@@ -10,12 +10,13 @@ modules: [
     {
         "name": "add-attribute",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.FormContainer",
             "title": "p:add-attribute",
+	    "icon": "icons/add.png",
             "terminals": [
                 
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
@@ -28,12 +29,13 @@ modules: [
     {
         "name": "add-xml-base",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.FormContainer",
             "title": "p:add-xml-base",
+	    "icon": "icons/add.png",
             "terminals": [
                 
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
@@ -45,13 +47,14 @@ modules: [
     {
         "name": "compare",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.FormContainer",
             "title": "p:compare",
+	    "icon": "icons/tag.png",
             "terminals": [
                 
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 77, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
 	    {"name": "alternate", "direction": [0,-1], "offsetPosition":{"left": 157, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
@@ -62,12 +65,13 @@ modules: [
     {
         "name": "count",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.FormContainer",
             "title": "p:count",
+	    "icon": "icons/calculator.png",
             "terminals": [
                 
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
@@ -78,12 +82,13 @@ modules: [
     {
         "name": "delete",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.FormContainer",
             "title": "p:delete",
+	    "icon": "icons/bin.png",
             "terminals": [
                 
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
@@ -94,11 +99,12 @@ modules: [
     {
         "name": "directory-list",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.FormContainer",
             "title": "p:directory-list",
+	    "icon": "icons/folder_explore.png",
             "terminals": [
                 
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
@@ -111,8 +117,9 @@ modules: [
     {
         "name": "error",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.FormContainer",
             "title": "p:error",
+	    "icon": "icons/error.png",
             "terminals": [
                 
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} }
@@ -126,12 +133,13 @@ modules: [
     {
         "name": "escape-markup",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.FormContainer",
             "title": "p:escape-markup",
+	    "icon": "icons/icon.png",
             "terminals": [
                 
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
@@ -153,12 +161,13 @@ modules: [
     {
         "name": "filter",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.FormContainer",
             "title": "p:filter",
+	    "icon": "icons/control_equalizer.png",
             "terminals": [
                 
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
@@ -169,12 +178,13 @@ modules: [
     {
         "name": "http-request",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.FormContainer",
             "title": "p:http-request",
+	    "icon": "icons/icon.png",
             "terminals": [
                 
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
@@ -199,12 +209,13 @@ modules: [
     {
         "name": "identity",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.Container",
             "title": "p:identity",
+	    "icon": "icons/icon.png",
             "terminals": [
                 
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     
                 }
@@ -212,13 +223,14 @@ modules: [
     {
         "name": "insert",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.FormContainer",
             "title": "p:insert",
+	    "icon": "icons/icon.png",
             "terminals": [
                 
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 77, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
 	    {"name": "insertion", "direction": [0,-1], "offsetPosition":{"left": 157, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
@@ -230,12 +242,13 @@ modules: [
     {
         "name": "label-elements",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.FormContainer",
             "title": "p:label-elements",
+	    "icon": "icons/icon.png",
             "terminals": [
                 
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
@@ -249,11 +262,12 @@ modules: [
     {
         "name": "load",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.FormContainer",
             "title": "p:load",
+	    "icon": "icons/icon.png",
             "terminals": [
                 
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
@@ -265,12 +279,13 @@ modules: [
     {
         "name": "make-absolute-uris",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.FormContainer",
             "title": "p:make-absolute-uris",
+	    "icon": "icons/icon.png",
             "terminals": [
                 
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
@@ -282,12 +297,13 @@ modules: [
     {
         "name": "namespace-rename",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.FormContainer",
             "title": "p:namespace-rename",
+	    "icon": "icons/icon.png",
             "terminals": [
                 
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
@@ -300,13 +316,14 @@ modules: [
     {
         "name": "pack",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.FormContainer",
             "title": "p:pack",
+	    "icon": "icons/icon.png",
             "terminals": [
                 
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 77, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
 	    {"name": "alternate", "direction": [0,-1], "offsetPosition":{"left": 157, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
@@ -317,12 +334,13 @@ modules: [
     {
         "name": "parameters",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.Container",
             "title": "p:parameters",
+	    "icon": "icons/icon.png",
             "terminals": [
                 
 	    {"name": "parameters", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     
                 }
@@ -330,12 +348,13 @@ modules: [
     {
         "name": "rename",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.FormContainer",
             "title": "p:rename",
+	    "icon": "icons/icon.png",
             "terminals": [
                 
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
@@ -347,13 +366,14 @@ modules: [
     {
         "name": "replace",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.FormContainer",
             "title": "p:replace",
+	    "icon": "icons/icon.png",
             "terminals": [
                 
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 77, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
 	    {"name": "replacement", "direction": [0,-1], "offsetPosition":{"left": 157, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
@@ -364,13 +384,14 @@ modules: [
     {
         "name": "set-attributes",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.FormContainer",
             "title": "p:set-attributes",
+	    "icon": "icons/icon.png",
             "terminals": [
                 
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 77, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
 	    {"name": "attributes", "direction": [0,-1], "offsetPosition":{"left": 157, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
@@ -381,8 +402,9 @@ modules: [
     {
         "name": "sink",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.Container",
             "title": "p:sink",
+	    "icon": "icons/icon.png",
             "terminals": [
                 
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} }
@@ -393,13 +415,14 @@ modules: [
     {
         "name": "split-sequence",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.FormContainer",
             "title": "p:split-sequence",
+	    "icon": "icons/icon.png",
             "terminals": [
                 
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "matched", "direction": [0,1], "offsetPosition":{"left": 77, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} },
-	    {"name": "not-matched", "direction": [0,1], "offsetPosition":{"left": 157, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "matched", "direction": [0,1], "offsetPosition":{"left": 77, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" },
+	    {"name": "not-matched", "direction": [0,1], "offsetPosition":{"left": 157, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
@@ -411,12 +434,13 @@ modules: [
     {
         "name": "store",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.FormContainer",
             "title": "p:store",
+	    "icon": "icons/icon.png",
             "terminals": [
                 
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
@@ -442,12 +466,13 @@ modules: [
     {
         "name": "string-replace",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.FormContainer",
             "title": "p:string-replace",
+	    "icon": "icons/icon.png",
             "terminals": [
                 
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
@@ -459,12 +484,13 @@ modules: [
     {
         "name": "unescape-markup",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.FormContainer",
             "title": "p:unescape-markup",
+	    "icon": "icons/icon.png",
             "terminals": [
                 
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
@@ -478,12 +504,13 @@ modules: [
     {
         "name": "unwrap",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.FormContainer",
             "title": "p:unwrap",
+	    "icon": "icons/icon.png",
             "terminals": [
                 
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
@@ -494,12 +521,13 @@ modules: [
     {
         "name": "wrap",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.FormContainer",
             "title": "p:wrap",
+	    "icon": "icons/icon.png",
             "terminals": [
                 
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
@@ -512,12 +540,13 @@ modules: [
     {
         "name": "wrap-sequence",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.FormContainer",
             "title": "p:wrap-sequence",
+	    "icon": "icons/icon.png",
             "terminals": [
                 
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
@@ -529,12 +558,13 @@ modules: [
     {
         "name": "xinclude",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.FormContainer",
             "title": "p:xinclude",
+	    "icon": "icons/icon.png",
             "terminals": [
                 
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
@@ -546,15 +576,16 @@ modules: [
     {
         "name": "xslt",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.FormContainer",
             "title": "p:xslt",
+	    "icon": "icons/icon.png",
             "terminals": [
                 
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 37, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
 	    {"name": "stylesheet", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
 	    {"name": "parameters", "direction": [0,-1], "offsetPosition":{"left": 197, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 77, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} },
-	    {"name": "secondary", "direction": [0,1], "offsetPosition":{"left": 157, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 77, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" },
+	    {"name": "secondary", "direction": [0,1], "offsetPosition":{"left": 157, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
@@ -568,13 +599,14 @@ modules: [
     {
         "name": "exec",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.FormContainer",
             "title": "p:exec",
+	    "icon": "icons/icon.png",
             "terminals": [
                 
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 77, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} },
-	    {"name": "errors", "direction": [0,1], "offsetPosition":{"left": 157, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 77, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" },
+	    {"name": "errors", "direction": [0,1], "offsetPosition":{"left": 157, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
@@ -608,13 +640,14 @@ modules: [
     {
         "name": "hash",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.FormContainer",
             "title": "p:hash",
+	    "icon": "icons/icon.png",
             "terminals": [
                 
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 77, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
 	    {"name": "parameters", "direction": [0,-1], "offsetPosition":{"left": 157, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
@@ -628,12 +661,13 @@ modules: [
     {
         "name": "uuid",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.FormContainer",
             "title": "p:uuid",
+	    "icon": "icons/icon.png",
             "terminals": [
                 
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
@@ -645,13 +679,14 @@ modules: [
     {
         "name": "validate-with-relax-ng",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.FormContainer",
             "title": "p:validate-with-relax-ng",
+	    "icon": "icons/icon.png",
             "terminals": [
                 
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 77, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
 	    {"name": "schema", "direction": [0,-1], "offsetPosition":{"left": 157, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
@@ -664,15 +699,16 @@ modules: [
     {
         "name": "validate-with-schematron",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.FormContainer",
             "title": "p:validate-with-schematron",
+	    "icon": "icons/icon.png",
             "terminals": [
                 
 	    {"name": "parameters", "direction": [0,-1], "offsetPosition":{"left": 37, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
 	    {"name": "schema", "direction": [0,-1], "offsetPosition":{"left": 197, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 77, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} },
-	    {"name": "report", "direction": [0,1], "offsetPosition":{"left": 157, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 77, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" },
+	    {"name": "report", "direction": [0,1], "offsetPosition":{"left": 157, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
@@ -684,13 +720,14 @@ modules: [
     {
         "name": "validate-with-xml-schema",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.FormContainer",
             "title": "p:validate-with-xml-schema",
+	    "icon": "icons/icon.png",
             "terminals": [
                 
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 77, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
 	    {"name": "schema", "direction": [0,-1], "offsetPosition":{"left": 157, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
@@ -704,11 +741,12 @@ modules: [
     {
         "name": "www-form-urldecode",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.FormContainer",
             "title": "p:www-form-urldecode",
+	    "icon": "icons/icon.png",
             "terminals": [
                 
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
@@ -719,13 +757,14 @@ modules: [
     {
         "name": "www-form-urlencode",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.FormContainer",
             "title": "p:www-form-urlencode",
+	    "icon": "icons/icon.png",
             "terminals": [
                 
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 77, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
 	    {"name": "parameters", "direction": [0,-1], "offsetPosition":{"left": 157, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
@@ -736,14 +775,15 @@ modules: [
     {
         "name": "xquery",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.Container",
             "title": "p:xquery",
+	    "icon": "icons/icon.png",
             "terminals": [
                 
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 37, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
 	    {"name": "query", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
 	    {"name": "parameters", "direction": [0,-1], "offsetPosition":{"left": 197, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     
                 }
@@ -751,13 +791,14 @@ modules: [
     {
         "name": "xsl-formatter",
         "container": {
-            "xtype": "WireIt.FormContainer",
+	"xtype": "WireIt.FormContainer",
             "title": "p:xsl-formatter",
+	    "icon": "icons/icon.png",
             "terminals": [
                 
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 77, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
 	    {"name": "parameters", "direction": [0,-1], "offsetPosition":{"left": 157, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
