@@ -6,12 +6,15 @@
     <xsl:output method="text"/>
     <xsl:strip-space elements="*"/>
 
+    <xsl:variable name="width" select="234"/>
+    <xsl:variable name="offset" select="80"/>
+
 <xsl:template match="/">
 var xprocLanguage = {
 languageName: "XProc",
 propertiesFields: [
-	{"type": "string", inputParams: {"name": "name", label: "Title", typeInvite: "Enter a title" } },
-	{"type": "text", inputParams: {"name": "description", label: "Description", cols: 30} }
+	{type: "string", inputParams: {name: "name", label: "Title", typeInvite: "Enter a title" } },
+	{type: "text", inputParams: {name: "description", label: "Description", cols: 30} }
 ],
 modules: [
 <xsl:apply-templates/>
@@ -37,11 +40,11 @@ modules: [
 </xsl:template>
     
     <xsl:template match="p:input">
-	    {"name": "<xsl:value-of select="@port"/>", "direction": [0,-1], "offsetPosition":{"left": <xsl:value-of select="60 + 40 * position()"/>, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} }<xsl:if test="position() != last()">,</xsl:if>
+	    {"name": "<xsl:value-of select="@port"/>", "direction": [0,-1], "offsetPosition":{"left": <xsl:value-of select=".5 * $width - ( .5 * $offset * (last() - 1)) + $offset * (position() - 1)"/>, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} }<xsl:if test="position() != last()">,</xsl:if>
     </xsl:template>
  
     <xsl:template match="p:output">
-	    {"name": "<xsl:value-of select="@port"/>", "direction": [0,1], "offsetPosition":{"left": <xsl:value-of select="60 + 40 * position()"/>, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }<xsl:if test="position() != last()">,</xsl:if>
+	    {"name": "<xsl:value-of select="@port"/>", "direction": [0,1], "offsetPosition":{"left": <xsl:value-of select=".5 * $width - ( .5 * $offset * (last() - 1)) + $offset * (position() - 1)"/>, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }<xsl:if test="position() != last()">,</xsl:if>
     </xsl:template>
     
     <xsl:template match="p:option">

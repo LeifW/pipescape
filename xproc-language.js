@@ -2,8 +2,8 @@
 var xprocLanguage = {
 languageName: "XProc",
 propertiesFields: [
-	{"type": "string", inputParams: {"name": "name", label: "Title", typeInvite: "Enter a title" } },
-	{"type": "text", inputParams: {"name": "description", label: "Description", cols: 30} }
+	{type: "string", inputParams: {name: "name", label: "Title", typeInvite: "Enter a title" } },
+	{type: "text", inputParams: {name: "description", label: "Description", cols: 30} }
 ],
 modules: [
 
@@ -14,8 +14,8 @@ modules: [
             "title": "p:add-attribute",
             "terminals": [
                 
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     , "fields": [
         
@@ -32,8 +32,8 @@ modules: [
             "title": "p:add-xml-base",
             "terminals": [
                 
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     , "fields": [
         
@@ -49,9 +49,9 @@ modules: [
             "title": "p:compare",
             "terminals": [
                 
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "alternate", "direction": [0,-1], "offsetPosition":{"left": 140, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 77, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "alternate", "direction": [0,-1], "offsetPosition":{"left": 157, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     , "fields": [
         
@@ -66,8 +66,8 @@ modules: [
             "title": "p:count",
             "terminals": [
                 
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     , "fields": [
         
@@ -82,8 +82,8 @@ modules: [
             "title": "p:delete",
             "terminals": [
                 
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     , "fields": [
         
@@ -98,7 +98,7 @@ modules: [
             "title": "p:directory-list",
             "terminals": [
                 
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     , "fields": [
         
@@ -115,7 +115,7 @@ modules: [
             "title": "p:error",
             "terminals": [
                 
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} }
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} }
                 ]
     , "fields": [
         
@@ -130,8 +130,8 @@ modules: [
             "title": "p:escape-markup",
             "terminals": [
                 
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     , "fields": [
         
@@ -157,8 +157,8 @@ modules: [
             "title": "p:filter",
             "terminals": [
                 
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     , "fields": [
         
@@ -173,8 +173,8 @@ modules: [
             "title": "p:http-request",
             "terminals": [
                 
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     , "fields": [
         
@@ -203,8 +203,8 @@ modules: [
             "title": "p:identity",
             "terminals": [
                 
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     
                 }
@@ -216,9 +216,9 @@ modules: [
             "title": "p:insert",
             "terminals": [
                 
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "insertion", "direction": [0,-1], "offsetPosition":{"left": 140, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 77, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "insertion", "direction": [0,-1], "offsetPosition":{"left": 157, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     , "fields": [
         
@@ -234,8 +234,8 @@ modules: [
             "title": "p:label-elements",
             "terminals": [
                 
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     , "fields": [
         
@@ -253,7 +253,7 @@ modules: [
             "title": "p:load",
             "terminals": [
                 
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     , "fields": [
         
@@ -269,8 +269,8 @@ modules: [
             "title": "p:make-absolute-uris",
             "terminals": [
                 
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     , "fields": [
         
@@ -286,8 +286,8 @@ modules: [
             "title": "p:namespace-rename",
             "terminals": [
                 
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     , "fields": [
         
@@ -304,9 +304,9 @@ modules: [
             "title": "p:pack",
             "terminals": [
                 
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "alternate", "direction": [0,-1], "offsetPosition":{"left": 140, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 77, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "alternate", "direction": [0,-1], "offsetPosition":{"left": 157, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     , "fields": [
         
@@ -321,8 +321,8 @@ modules: [
             "title": "p:parameters",
             "terminals": [
                 
-	    {"name": "parameters", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "parameters", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     
                 }
@@ -334,8 +334,8 @@ modules: [
             "title": "p:rename",
             "terminals": [
                 
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     , "fields": [
         
@@ -351,9 +351,9 @@ modules: [
             "title": "p:replace",
             "terminals": [
                 
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "replacement", "direction": [0,-1], "offsetPosition":{"left": 140, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 77, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "replacement", "direction": [0,-1], "offsetPosition":{"left": 157, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     , "fields": [
         
@@ -368,9 +368,9 @@ modules: [
             "title": "p:set-attributes",
             "terminals": [
                 
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "attributes", "direction": [0,-1], "offsetPosition":{"left": 140, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 77, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "attributes", "direction": [0,-1], "offsetPosition":{"left": 157, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     , "fields": [
         
@@ -385,7 +385,7 @@ modules: [
             "title": "p:sink",
             "terminals": [
                 
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} }
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} }
                 ]
     
                 }
@@ -397,9 +397,9 @@ modules: [
             "title": "p:split-sequence",
             "terminals": [
                 
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "matched", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} },
-	    {"name": "not-matched", "direction": [0,1], "offsetPosition":{"left": 140, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "matched", "direction": [0,1], "offsetPosition":{"left": 77, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} },
+	    {"name": "not-matched", "direction": [0,1], "offsetPosition":{"left": 157, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     , "fields": [
         
@@ -415,8 +415,8 @@ modules: [
             "title": "p:store",
             "terminals": [
                 
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     , "fields": [
         
@@ -446,8 +446,8 @@ modules: [
             "title": "p:string-replace",
             "terminals": [
                 
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     , "fields": [
         
@@ -463,8 +463,8 @@ modules: [
             "title": "p:unescape-markup",
             "terminals": [
                 
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     , "fields": [
         
@@ -482,8 +482,8 @@ modules: [
             "title": "p:unwrap",
             "terminals": [
                 
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     , "fields": [
         
@@ -498,8 +498,8 @@ modules: [
             "title": "p:wrap",
             "terminals": [
                 
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     , "fields": [
         
@@ -516,8 +516,8 @@ modules: [
             "title": "p:wrap-sequence",
             "terminals": [
                 
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     , "fields": [
         
@@ -533,8 +533,8 @@ modules: [
             "title": "p:xinclude",
             "terminals": [
                 
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     , "fields": [
         
@@ -550,11 +550,11 @@ modules: [
             "title": "p:xslt",
             "terminals": [
                 
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "stylesheet", "direction": [0,-1], "offsetPosition":{"left": 140, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "parameters", "direction": [0,-1], "offsetPosition":{"left": 180, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} },
-	    {"name": "secondary", "direction": [0,1], "offsetPosition":{"left": 140, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 37, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "stylesheet", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "parameters", "direction": [0,-1], "offsetPosition":{"left": 197, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 77, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} },
+	    {"name": "secondary", "direction": [0,1], "offsetPosition":{"left": 157, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     , "fields": [
         
@@ -572,9 +572,9 @@ modules: [
             "title": "p:exec",
             "terminals": [
                 
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} },
-	    {"name": "errors", "direction": [0,1], "offsetPosition":{"left": 140, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 77, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} },
+	    {"name": "errors", "direction": [0,1], "offsetPosition":{"left": 157, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     , "fields": [
         
@@ -612,9 +612,9 @@ modules: [
             "title": "p:hash",
             "terminals": [
                 
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "parameters", "direction": [0,-1], "offsetPosition":{"left": 140, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 77, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "parameters", "direction": [0,-1], "offsetPosition":{"left": 157, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     , "fields": [
         
@@ -632,8 +632,8 @@ modules: [
             "title": "p:uuid",
             "terminals": [
                 
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     , "fields": [
         
@@ -649,9 +649,9 @@ modules: [
             "title": "p:validate-with-relax-ng",
             "terminals": [
                 
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "schema", "direction": [0,-1], "offsetPosition":{"left": 140, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 77, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "schema", "direction": [0,-1], "offsetPosition":{"left": 157, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     , "fields": [
         
@@ -668,11 +668,11 @@ modules: [
             "title": "p:validate-with-schematron",
             "terminals": [
                 
-	    {"name": "parameters", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 140, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "schema", "direction": [0,-1], "offsetPosition":{"left": 180, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} },
-	    {"name": "report", "direction": [0,1], "offsetPosition":{"left": 140, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "parameters", "direction": [0,-1], "offsetPosition":{"left": 37, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "schema", "direction": [0,-1], "offsetPosition":{"left": 197, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 77, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} },
+	    {"name": "report", "direction": [0,1], "offsetPosition":{"left": 157, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     , "fields": [
         
@@ -688,9 +688,9 @@ modules: [
             "title": "p:validate-with-xml-schema",
             "terminals": [
                 
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "schema", "direction": [0,-1], "offsetPosition":{"left": 140, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 77, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "schema", "direction": [0,-1], "offsetPosition":{"left": 157, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     , "fields": [
         
@@ -708,7 +708,7 @@ modules: [
             "title": "p:www-form-urldecode",
             "terminals": [
                 
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     , "fields": [
         
@@ -723,9 +723,9 @@ modules: [
             "title": "p:www-form-urlencode",
             "terminals": [
                 
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "parameters", "direction": [0,-1], "offsetPosition":{"left": 140, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 77, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "parameters", "direction": [0,-1], "offsetPosition":{"left": 157, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     , "fields": [
         
@@ -740,10 +740,10 @@ modules: [
             "title": "p:xquery",
             "terminals": [
                 
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "query", "direction": [0,-1], "offsetPosition":{"left": 140, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "parameters", "direction": [0,-1], "offsetPosition":{"left": 180, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 37, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "query", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "parameters", "direction": [0,-1], "offsetPosition":{"left": 197, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     
                 }
@@ -755,9 +755,9 @@ modules: [
             "title": "p:xsl-formatter",
             "terminals": [
                 
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 100, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "parameters", "direction": [0,-1], "offsetPosition":{"left": 140, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 100, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 77, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "parameters", "direction": [0,-1], "offsetPosition":{"left": 157, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]} }
                 ]
     , "fields": [
         
