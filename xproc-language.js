@@ -122,7 +122,8 @@ modules: [
 	    "icon": "icons/error.png",
             "terminals": [
                 
-	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} }
+	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
@@ -605,8 +606,9 @@ modules: [
             "terminals": [
                 
 	    {"name": "source", "direction": [0,-1], "offsetPosition":{"left": 117, "top": -15}, "ddConfig": { "type": "input", "allowedTypes": ["output"]} },
-	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 77, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" },
-	    {"name": "errors", "direction": [0,1], "offsetPosition":{"left": 157, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
+	    {"name": "result", "direction": [0,1], "offsetPosition":{"left": 37, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" },
+	    {"name": "errors", "direction": [0,1], "offsetPosition":{"left": 117, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" },
+	    {"name": "exit-status", "direction": [0,1], "offsetPosition":{"left": 197, "bottom": -15}, "ddConfig": { "type": "output", "allowedTypes": ["input"]}, "alwaysSrc": "true" }
                 ]
     , "fields": [
         
@@ -618,7 +620,9 @@ modules: [
 	    {"type": "boolean", "inputParams": {"label": "wrap-result-lines", "name": "wrap-result-lines", "value": false } },
 	    {"type": "boolean", "inputParams": {"label": "errors-is-xml", "name": "errors-is-xml", "value": false } },
 	    {"type": "boolean", "inputParams": {"label": "wrap-error-lines", "name": "wrap-error-lines", "value": false } },
-	    {"type": "boolean", "inputParams": {"label": "fix-slashes", "name": "fix-slashes", "value": false } },
+	    {"inputParams": {"label": "path-separator", "name": "path-separator" } },
+	    {"type": "integer", "inputParams": {"label": "failure-threshold", "name": "failure-threshold" } },
+	    {"inputParams": {"label": "arg-separator", "name": "arg-separator", "value": " " } },
 	    {"type": "boolean", "inputParams": {"label": "byte-order-mark", "name": "byte-order-mark" } },
 	    {"inputParams": {"label": "cdata-section-elements", "name": "cdata-section-elements", "value": "" } },
 	    {"inputParams": {"label": "doctype-public", "name": "doctype-public" } },

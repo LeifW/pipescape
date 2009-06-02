@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<p:library 
+<p:library xmlns:xlink="http://www.w3.org/1999/xlink"
+           xmlns:cs="http://www.w3.org/XML/XProc/2006/04/components#"
+           xmlns:xi="http://www.w3.org/2001/XInclude"
            xmlns:e="http://www.w3.org/1999/XSL/Spec/ElementSyntax"
+           xmlns="http://docbook.org/ns/docbook"
            xmlns:p="http://www.w3.org/ns/xproc">
    <p:declare-step type="p:add-attribute">
       <p:input port="source"/>
@@ -39,6 +42,7 @@
    </p:declare-step>
    <p:declare-step type="p:error">
       <p:input port="source" primary="false"/>
+      <p:output port="result" sequence="true"/>
       <p:option name="code" required="true" e:type="xsd:QName"/>
    </p:declare-step>
    <p:declare-step type="p:escape-markup">
@@ -229,6 +233,7 @@
       <p:input port="source" primary="true" sequence="true"/>
       <p:output port="result" primary="true"/>
       <p:output port="errors"/>
+      <p:output port="exit-status"/>
       <p:option name="command" required="true" e:type="xsd:string"/>
       <p:option name="args" select="''" e:type="xsd:string"/>
       <p:option name="cwd" e:type="xsd:string"/>
@@ -237,7 +242,9 @@
       <p:option name="wrap-result-lines" select="'false'" e:type="xsd:boolean"/>
       <p:option name="errors-is-xml" select="'false'" e:type="xsd:boolean"/>
       <p:option name="wrap-error-lines" select="'false'" e:type="xsd:boolean"/>
-      <p:option name="fix-slashes" select="'false'" e:type="xsd:boolean"/>
+      <p:option name="path-separator" e:type="xsd:string"/>
+      <p:option name="failure-threshold" e:type="xsd:integer"/>
+      <p:option name="arg-separator" select="' '" e:type="xsd:string"/>
   
       <!-- plus the serialization options -->
   <p:option name="byte-order-mark" e:type="xsd:boolean"/>
