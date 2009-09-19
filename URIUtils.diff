@@ -1,0 +1,31 @@
+Index: util/URIUtils.java
+===================================================================
+--- util/URIUtils.java	(revision 420)
++++ util/URIUtils.java	(working copy)
+@@ -82,14 +82,18 @@
+         URI cwd = null;
+         
+         try {
+-            String path = encode(dir);
+-            if (!path.endsWith("/")) {
+-                path += "/";
+-            }
+-            if (!path.startsWith("/")) {
+-                path = "/" + path;
+-            }
+-            cwd = new URI("file:" + path);
++	    if (dir.startsWith("http://")) { // Skip this stuff if passed in an http:// URI
++	        cwd = new URI(dir);
++       	    } else {
++                String path = encode(dir);
++                if (!path.endsWith("/")) {
++                    path += "/";
++                }
++                if (!path.startsWith("/")) {
++                    path = "/" + path;
++                }
++                cwd = new URI("file:" + path);
++	    }
+         } catch (URISyntaxException use) {
+             throw new XProcException(use);
+         }
